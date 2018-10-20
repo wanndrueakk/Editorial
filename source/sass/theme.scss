@@ -133,11 +133,20 @@ button {
   align-items: center;
   padding: 9px 22px;
   text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  transition: 0.25s background ease-in-out;
 }
-
+button:hover {
+  background: rgba(245, 106, 106, 0.05);
+}
+button:active {
+  background: rgba(245, 106, 106, 0.15);
+}
 img {
   max-width: 100%;
   height: auto;
+  transition: 0.5s transform ease-in-out;
 }
 
 a {

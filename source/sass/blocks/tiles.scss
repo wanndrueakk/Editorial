@@ -39,3 +39,9 @@
   }
 }
 
+.post__inner div {
+  overflow: hidden;
+}
+div:hover > img {
+  transform: scale(1.1);
+}

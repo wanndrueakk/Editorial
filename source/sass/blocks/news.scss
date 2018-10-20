@@ -17,16 +17,20 @@
   height: 1px;
   background: $color-grey;
 }
-
+.news__item {
+  border-bottom: 1px solid $color-grey;
+  margin: 0 0 20px 0;
+}
 .news__link {
   color: inherit;
-  font-size: 8px;
-  display: inline-block;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
   margin: 0 0 15px;
   padding: 0 0 10px;
-  border-bottom: 1px solid $color-grey;
+  overflow: hidden;
 }
-.news__link:last-child {
+.news__item:last-child {
   border: 0;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -34,8 +38,11 @@
 .news__link img {
   border-radius: 3px;
 }
+.news__link:hover img {
+  transform: scale(1.1);
+}
 .news__button {
-  font-size: 7px;
+  font-size: 11px;
   padding: 5px 16px;
   border-width: 1px;
 }

@@ -1,6 +1,6 @@
 .contacts {
-  padding: 40px 20px 0;
-  font-size: 8px;
+  padding: 20px 20px 0;
+  font-size: 12px;
 }
 .contacts__address {
   list-style: none;
@@ -19,7 +19,7 @@
 }
 .contacts li > *  {
   display: flex;
-  padding: 10px 0 10px 24px;
+  padding: 16px 0 16px 34px;
   border-bottom: 1px solid $color-grey;
 }
 .contacts__item {
@@ -30,25 +30,25 @@
 }
 .contacts__item--email::before {
   position: absolute;
-  font: normal 12px/12px "FontAwsome";
+  font: normal 18px/18px "FontAwsome";
   content: "\f003";
-  top: 10px;
+  top: 16px;
   left: 2px;
   color: $color-red;
 }
 .contacts__item--phone::before {
   position: absolute;
-  font: normal 12px/12px "FontAwsome";
+  font: normal 18px/18px "FontAwsome";
   content: "\f095";
-  top: 10px;
+  top: 16px;
   left: 2px;
   color: $color-red;
 }
 .contacts__item--address::before {
   position: absolute;
-  font: normal 12px/12px "FontAwsome";
+  font: normal 18px/18px "FontAwsome";
   content: "\f015";
-  top: 10px;
+  top: 16px;
   left: 2px;
   color: $color-red;
 }

@@ -1,11 +1,11 @@
 .sidebar {
-  width: 190px;
+  width: 290px;
   box-sizing: border-box;
   position: fixed;
   background: $color-sidebar;
   z-index: 1;
   height: 100%;
-  left: -190px;
+  left: -290px;
   transition: left 1s ease;
 }
 .sidebar.opened {
@@ -19,7 +19,7 @@
 }
 .sidebar__search {
   background: $color-search;
-  padding: 14px;
+  padding: 20px;
 }
 .sidebar__form {
   display: flex;
@@ -29,15 +29,16 @@
   width: 100%;
   border: 0.5px solid $color-grey;
   border-radius: 3px;
-  font-size: 9px;
-  padding: 6px 10px;
+  font-size: 12px;
+  padding: 10px 16px;
+  outline-color: $color-red;
 }
 .sidebar__form::after {
   content: "\f002";
-  font: normal 12px/20px "FontAwsome";
+  font: normal 18px/20px "FontAwsome";
   position: absolute;
   right: 8px;
-  top: 1px;
+  top: 6px;
   color: $color-grey;
   transform: scaleX(-1);
 }

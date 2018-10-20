@@ -3,13 +3,12 @@
 }
 .menu__title {
   display: inline-block;
-  font-size: 12px;
-  border-bottom: 2px solid $color-red;
-  padding: 12px 10px 2px 0;
+  border-bottom: 3px solid $color-red;
+  padding: 28px 10px 6px 0;
 }
 .menu__list {
   list-style: none;
-  padding: 0 0 20px 0;
+  padding: 3px 0 20px 0;
   margin: 5px 0 0;
   border-bottom: 1px solid $color-grey;
 }
@@ -18,10 +17,10 @@
 }
 .menu__link {
   color: $color-darkgrey;
-  font: normal 7px/10px "RobotoSlab";
+  font: normal 11px/11px "RobotoSlab";
   text-transform: uppercase;
   letter-spacing: 0.8px;
-  padding: 10px 0px 9px;
+  padding: 16px 0px 16px;
   display: inline-block;
 }
 .menu a:hover {
@@ -38,7 +37,7 @@
   margin: 0;
 }
 .menu__submenu-link {
-  font-size: 7px;
+  font-size: 11px;
   color: $color-chevron;
   text-transform: uppercase;
   padding: 3px 0;
@@ -53,7 +52,7 @@
 }
 .menu__hassub::after {
   content: "\f078";
-  font: normal 7px/7px "FontAwsome";
+  font: normal 11px/11px "FontAwsome";
   color: $color-chevron;
 }
 .menu__hassub:hover::after {

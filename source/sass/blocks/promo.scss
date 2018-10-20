@@ -17,13 +17,13 @@
 .promo__col--2 {
   order: 1;
   margin-bottom: 46px;
-  background: url("/images/pic10.jpg");
+  background: url("../images/pic10.jpg");
   border-radius: 3px;
   width: 100%;
   height: 240px;
-  background: url("/images/pic10.jpg");
   background-size: cover;
   background-position: center center;
+  background-repeat: no-repeat;
 }
 .promo__btn {
   margin: 44px 0 0;
