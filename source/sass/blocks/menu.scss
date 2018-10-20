@@ -1,0 +1,67 @@
+.menu {
+  padding: 0 20px;
+}
+.menu__title {
+  display: inline-block;
+  font-size: 12px;
+  border-bottom: 2px solid $color-red;
+  padding: 12px 10px 2px 0;
+}
+.menu__list {
+  list-style: none;
+  padding: 0 0 20px 0;
+  margin: 5px 0 0;
+  border-bottom: 1px solid $color-grey;
+}
+.menu__item:not(:first-child) {
+  border-top: 1px solid $color-grey;
+}
+.menu__link {
+  color: $color-darkgrey;
+  font: normal 7px/10px "RobotoSlab";
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 10px 0px 9px;
+  display: inline-block;
+}
+.menu a:hover {
+  color: $color-red;
+}
+.menu__hassub + ul {
+  display: none;
+  list-style: none;
+  padding: 0 0 0 10px;
+  margin: -4px 0 9px;
+  font-family: "RobotoSlab";
+}
+.menu__hassub + ul li {
+  margin: 0;
+}
+.menu__submenu-link {
+  font-size: 7px;
+  color: $color-chevron;
+  text-transform: uppercase;
+  padding: 3px 0;
+  display: inline-block;
+  width: 100%;
+  
+}
+.menu__hassub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__hassub::after {
+  content: "\f078";
+  font: normal 7px/7px "FontAwsome";
+  color: $color-chevron;
+}
+.menu__hassub:hover::after {
+  color: $color-red;
+}
+.menu__show::after {
+  content: "\f077";
+}
+.menu__show + ul {
+  display: block;
+}

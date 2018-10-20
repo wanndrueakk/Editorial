@@ -1,0 +1,74 @@
+/* Block — Page nav */
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  align-items: baseline;
+}
+
+.nav__logo {
+  font-family: "RobotoSlab", serif;
+  font-size: 16px;
+  order: 2;
+  display: inline-block;
+  border-bottom: 5px solid $color-red;
+  width: 100%;
+  padding: 0 0 12px 0;
+  margin: 20px 0 0;
+}
+.nav__logo b {
+  color: $color-darkgrey;
+}
+
+.nav__social {
+  order: 1;
+  flex: 0 0 100%;
+  display: flex;
+  list-style: none;
+  padding: 11px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__social>li:first-child {
+  margin-left: calc(100% - 138px);
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 0;
+  color: inherit;
+}
+.nav__link::before {
+  font: normal 17px/17px "FontAwsome"; 
+  content: "\f099";
+}
+.nav__link--fb::before {
+  content: "\f09a";
+}
+.nav__link--sc::before {
+  content: "\f2ac";
+}
+.nav__link--in::before {
+  content: "\f16d";
+}
+.nav__link--me::before {
+  content: "\f23a";
+}
+.nav__link:hover {
+  color: $color-red;
+}
+@media (min-width:$iphone-width) {
+}
+@media (min-width: 737px) {
+  .nav__logo {
+    margin: 70px 0 0 0;
+  }
+  .nav__social {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+  }
+}

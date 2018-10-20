@@ -1,0 +1,41 @@
+.news {
+  padding: 0 20px;
+}
+
+.news__list {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.news__list::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background: $color-grey;
+}
+
+.news__link {
+  color: inherit;
+  font-size: 8px;
+  display: inline-block;
+  margin: 0 0 15px;
+  padding: 0 0 10px;
+  border-bottom: 1px solid $color-grey;
+}
+.news__link:last-child {
+  border: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.news__link img {
+  border-radius: 3px;
+}
+.news__button {
+  font-size: 7px;
+  padding: 5px 16px;
+  border-width: 1px;
+}

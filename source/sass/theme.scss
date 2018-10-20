@@ -1,0 +1,171 @@
+/* Variables */
+$iphone-width: 361px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$color-red: #f56a6a;
+$color-base: #7f888f;
+$color-grey: rgba(210, 215, 217, 0.75);
+$color-darkgrey: #3d4449;
+$color-search: #eff1f2;
+$color-sidebar: #f5f6f7;
+$color-toggle: rgba(222, 225, 226, 0.75);
+$font-size-base: 13px;
+$color-chevron: #9fa3a6;
+
+
+/* Generic styles */
+.page-wrapper {
+  display: flex;
+}
+
+.page-main {
+  position: relative;
+}
+
+.container {
+  padding: 0 24px;
+}
+
+@media (min-width: 361px) {
+  .container {
+    padding: 0 27px;
+  }
+}
+
+@media (min-width: 737px) {
+  .container {
+    padding: 0 53px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .container {
+    padding: 0 73px;
+  }
+}
+
+@media (min-width: 1681px) {
+  .container {
+    padding: 0 104px;
+  }
+}
+
+body {
+  color: $color-base;
+  font-family: "OpenSans", sans-serif;
+  font-size: $font-size-base;
+  line-height: 1.65;
+  font-weight: 400;
+  min-width: 320px;
+  max-width: 1680px;
+  box-shadow: 0 0 1px $color-red;
+  margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "RobotoSlab";
+  font-weight: bold;
+  color: $color-darkgrey;
+} 
+
+h1 + p {
+  text-transform: uppercase;
+  font-family: "RobotoSlab";
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 1.1px;
+  margin: 12px 0 24px 0;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 1.35;
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 30px;
+  border-bottom: 3px solid $color-red;
+  display: inline-block;
+  padding: 0 0 8px 0;
+}
+
+h3 {
+  font-size: 17px;
+  line-height: 23px;
+}
+
+@media (min-width: 982px) {
+  h1 {
+    font-size: 40px;
+  }
+  
+  h1 + p {
+    margin: 18px 0 24px 0;
+  }
+  
+  h2 {
+    font-size: 24px
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1680px) {
+  h1 {
+    font-size: 53px;
+  }
+}
+
+
+button {
+  background: white;
+  color: $color-red;
+  font-family: "RobotoSlab";
+  font-size: 11px;
+  font-weight: bold;
+  border: 2px solid $color-red;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 22px;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+/* Fonts */
+
+@font-face {
+  font-family: "FontAwsome";
+  src:
+    url("../fonts/FontAwesome.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src:
+    url("../fonts/OpenSans.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "RobotoSlab";
+  src:
+    url("../fonts/RobotoSlab.woff2") format("woff2");
+    font-weight: normal;
+}
+@font-face {
+  font-family: "RobotoSlab";
+  src:
+    url("../fonts/RobotoSlabBold.woff2") format("woff2");
+    font-weight: bold;
+}

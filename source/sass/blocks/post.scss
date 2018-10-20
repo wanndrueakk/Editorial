@@ -1,0 +1,32 @@
+.post {
+  padding: 28px 0;
+}
+
+.post__img {
+  border-radius: 3px;
+}
+
+.post__button {
+  margin: 28px 0 0;
+}
+@media (min-width: 481px) {
+  .post {
+    padding: 0 0 15%;
+  }
+  .post__inner {
+    width: 85%;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 734px) {
+  .post {
+    padding: 0 0 30px;
+  }
+  .post__inner {
+    width: calc(100% - 30px);
+  }
+  .post__img {
+    width: 100%;
+  }
+}
